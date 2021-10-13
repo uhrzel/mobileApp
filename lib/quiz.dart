@@ -9,7 +9,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   List<Icon> _scoreTracker = [];
-  int _questionIndex = 0;
+  int _questionIndex = 1;
   int _totalScore = 0;
   bool answerWasSelected = false;
   bool endOfQuiz = false;
@@ -253,7 +253,7 @@ final _questions = const [
         'score': false
       },
       {
-        'answerText': 'Nikla Tesla',
+        'answerText': 'Nikola Tesla',
         'score': false
       },
     ],
