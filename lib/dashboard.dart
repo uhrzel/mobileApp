@@ -38,11 +38,14 @@ class DashboardHome extends StatelessWidget {
             tileColor: Colors.pink,
           ),
           Divider(
-            color: Colors.red,
+            color: Colors.black,
             height: 30.0,
           ),
           ListTile(
-              leading: const Icon(Icons.flaky),
+              leading: const Icon(
+                Icons.flaky,
+                color: Colors.red,
+              ),
               //color: Colors.blue[900],
               title: Text('QUIZ NOW!'),
               onTap: () {
@@ -54,7 +57,9 @@ class DashboardHome extends StatelessWidget {
             height: 1.0,
           ),
           ListTile(
-              leading: const Icon(Icons.note_alt),
+              leading: const Icon(
+                Icons.note_alt,
+              ),
               title: Text('EDIT QUIZ'),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => EditQuiz()));
