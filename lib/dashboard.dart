@@ -64,6 +64,7 @@ class DashboardHome extends StatelessWidget {
             height: 1.0,
           ),
           ListTile(
+              leading: const Icon(Icons.other_houses_rounded),
               title: Text('HOME'),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => Dashboard()));
