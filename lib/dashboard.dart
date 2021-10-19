@@ -35,7 +35,7 @@ class DashboardHome extends StatelessWidget {
               'Select Options',
               style: TextStyle(color: Colors.black, fontFamily: 'Juicer', fontSize: 30),
             ),
-            backgroundColor: Colors.pink,
+            tileColor: Colors.pink,
           ),
           Divider(
             color: Colors.black,
