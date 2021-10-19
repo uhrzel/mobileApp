@@ -100,7 +100,9 @@ class _HomeState extends State<Home> {
                 borderRadius: BorderRadius.circular(10.0),
               ),
               child: Center(
-                leading: const Icon(Icons.filter_1),
+                ListTile(
+                  leading: const Icon(Icons.filter_1),
+                ),
                 child: Text(
                   _questions[_questionIndex]['question'],
                   textAlign: TextAlign.center,
