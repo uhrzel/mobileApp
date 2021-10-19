@@ -102,14 +102,14 @@ class _HomeState extends State<Home> {
               child: Center(
                 ListTile(
                   leading: const Icon(Icons.filter_1),
-                ),
-                child: Text(
-                  _questions[_questionIndex]['question'],
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 18.0,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
+                  child: Text(
+                    _questions[_questionIndex]['question'],
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
