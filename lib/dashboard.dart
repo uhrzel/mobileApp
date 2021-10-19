@@ -24,7 +24,7 @@ class DashboardHome extends StatelessWidget {
           'Dashboard',
           style: TextStyle(fontSize: 20.0, fontFamily: 'Mostery', color: Colors.black),
         ),
-        //backgroundColor: Colors.pink,
+        backgroundColor: Colors.pink,
       ),
       drawer: Drawer(
           child: Card(
@@ -57,7 +57,8 @@ class DashboardHome extends StatelessWidget {
               tileColor: Colors.blue[900]),
           Divider(
             color: Colors.black,
-            height: 1.0,
+            heigth: 20,
+            indent: 25.0,
           ),
           ListTile(
               leading: const Icon(
