@@ -20,7 +20,7 @@ class DashboardHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Icon(Icons.space_dashboard_rounded),
+        //leading: Icon(Icons.space_dashboard_rounded),
         title: Text(
           'Dashboard',
           style: TextStyle(fontSize: 20.0, fontFamily: 'Mostery', color: Colors.black),
