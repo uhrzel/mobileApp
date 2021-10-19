@@ -53,7 +53,10 @@ class DashboardHome extends StatelessWidget {
             height: 1.0,
           ),
           ListTile(
-              leading: const Icon(Icons.note_alt),
+              child: Icon(
+                Icons.admin_panel_settings_outlined,
+                //color: Colors.white,
+              ),
               title: Text('EDIT QUIZ'),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => EditQuiz()));
