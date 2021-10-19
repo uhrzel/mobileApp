@@ -35,7 +35,7 @@ class DashboardHome extends StatelessWidget {
               'Select Options',
               style: TextStyle(color: Colors.black, fontFamily: 'Juicer', fontSize: 30),
             ),
-            tileColor: Colors.pink,
+            //tileColor: Colors.pink,
           ),
           Divider(
             color: Colors.black,
@@ -57,8 +57,7 @@ class DashboardHome extends StatelessWidget {
               tileColor: Colors.blue[900]),
           Divider(
             color: Colors.black,
-            heigth: 20,
-            indent: 25.0,
+            height: 1.0,
           ),
           ListTile(
               leading: const Icon(
