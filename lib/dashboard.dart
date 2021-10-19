@@ -43,6 +43,7 @@ class DashboardHome extends StatelessWidget {
           ),
           ListTile(
               leading: const Icon(Icons.flaky),
+              color: Colors.blue[900],
               title: Text('QUIZ NOW!'),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => Home()));
