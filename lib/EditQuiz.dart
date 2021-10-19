@@ -23,7 +23,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(null),
+        title: Text("Sekret"),
       ),
       body: Center(
         child: Container(
@@ -38,7 +38,7 @@ class MyHomePage extends StatelessWidget {
           )),
           child: Center(
             child: Text(
-              null,
+              "Message mo kay crush",
               style: TextStyle(
                 fontSize: 48.0,
                 fontWeight: FontWeight.bold,
