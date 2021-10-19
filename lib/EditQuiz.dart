@@ -42,14 +42,12 @@ class MyHomePage extends StatelessWidget {
               Colors.red,
             ],
           )),
-          child: Center(
-            child: Text(
-              "Message mo kay crush",
-              style: TextStyle(
-                fontSize: 48.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
-              ),
+          child: Text(
+            "Message mo kay crush",
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ),
