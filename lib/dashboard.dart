@@ -132,7 +132,7 @@ class DashboardHome extends StatelessWidget {
               icon: InkWell(
                   child: Icon(
                     Icons.admin_panel_settings_sharp,
-                    color: Colors.black,
+                    color: Colors.white,
                   ),
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => Profile()));
