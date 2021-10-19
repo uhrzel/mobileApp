@@ -49,7 +49,7 @@ class DashboardHome extends StatelessWidget {
               //color: Colors.blue[900],
               title: Text(
                 'QUIZ NOW!',
-                style: TextStyle(fontWeight: FontWeight.bold, fontStyle: 'Times New Roman'),
+                style: TextStyle(fontWeight: FontWeight.bold, fontFamily: 'Times New Roman'),
               ),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => Home()));
