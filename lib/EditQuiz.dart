@@ -9,6 +9,7 @@ class EditQuiz extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.pink,
@@ -29,7 +30,7 @@ class MyHomePage extends StatelessWidget {
             onPressed: () {
               Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => Dashboard()));
             }),
-        title: Text("Dashboard"),
+        title: Text("Edit Quiz"),
       ),
       body: Center(
         child: Container(
