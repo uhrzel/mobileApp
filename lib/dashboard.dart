@@ -151,7 +151,7 @@ class DashboardHome extends StatelessWidget {
                   Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => Set()));
                 }),
             backgroundColor: Colors.red,
-            labelText: "Settings",
+            label: "Settings",
             labelStyle: TextStyle(color: Colors.amber[600], fontStyle: FontStyle.italic),
           ),
           BottomNavigationBarItem(
