@@ -12,7 +12,7 @@ class About extends StatelessWidget {
       // Application theme data, you can set the colors for the application as
       // you want
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.pink,
       ),
       // A widget which will be started on application startup
       home: AboutHome(title: 'About Us'),
