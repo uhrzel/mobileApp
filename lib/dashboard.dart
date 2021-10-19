@@ -39,7 +39,7 @@ class DashboardHome extends StatelessWidget {
           ),
           Divider(
             color: Colors.black,
-            height: 30.0,
+            height: 1.0,
           ),
           ListTile(
               leading: const Icon(
