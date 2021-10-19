@@ -131,7 +131,7 @@ class DashboardHome extends StatelessWidget {
           BottomNavigationBarItem(
               icon: InkWell(
                   child: Icon(
-                    Icons.account_circle_rounded,
+                    Icons.admin_panel_settings_sharp,
                     color: Colors.green[400],
                   ),
                   onTap: () {
