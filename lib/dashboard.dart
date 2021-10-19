@@ -44,7 +44,7 @@ class DashboardHome extends StatelessWidget {
           ListTile(
               leading: const Icon(
                 Icons.flaky,
-                color: Colors.red[900],
+                color: Colors.red,
               ),
               //color: Colors.blue[900],
               title: Text('QUIZ NOW!'),
@@ -59,7 +59,7 @@ class DashboardHome extends StatelessWidget {
           ListTile(
               leading: const Icon(
                 Icons.note_alt,
-                color: Colors.green[900],
+                color: Colors.green,
               ),
               title: Text('EDIT QUIZ'),
               onTap: () {
