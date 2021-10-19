@@ -20,9 +20,9 @@ class DashboardHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        ard',
-          style: title: Text(
-          'DashboTextStyle(fontSize: 20.0, fontFamily: 'Mostery', color: Colors.black),
+        title: Text(
+          'Dashboard',
+          style: TextStyle(fontSize: 20.0, fontFamily: 'Mostery', color: Colors.black),
         ),
         backgroundColor: Colors.pink,
       ),
@@ -42,7 +42,7 @@ class DashboardHome extends StatelessWidget {
             height: 30.0,
           ),
           ListTile(
-              leading: const Icon(Icons.flutter_dash_outlined),
+              leading: const Icon(Icons.flight_land),
               title: Text('QUIZ NOW!'),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => Home()));
@@ -86,7 +86,7 @@ class DashboardHome extends StatelessWidget {
             height: 0.5,
           ),
           ListTile(
-            leading: const Icon(Icons.disabled_by_default_sharp),
+              leading: const Icon(Icons.disabled_by_default_rounded),
               title: Text('QUIT'),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => MyApp()));
