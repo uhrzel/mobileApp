@@ -115,7 +115,7 @@ class DashboardHome extends StatelessWidget {
               icon: InkWell(
                   child: Icon(
                     Icons.settings_applications_outlined,
-                    color: Colors.black,
+                    //color: Colors.black,
                   ),
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => Set()));
@@ -137,7 +137,7 @@ class DashboardHome extends StatelessWidget {
               icon: InkWell(
                   child: Icon(
                     Icons.admin_panel_settings_outlined,
-                    color: Colors.red,
+                    //  color: Colors.red,
                   ),
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => Profile()));
