@@ -86,6 +86,7 @@ class DashboardHome extends StatelessWidget {
             height: 0.5,
           ),
           ListTile(
+            leading: const Icon(Icons.disabled_by_default_sharp),
               title: Text('QUIT'),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => MyApp()));

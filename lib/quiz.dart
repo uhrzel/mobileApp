@@ -141,9 +141,7 @@ class _HomeState extends State<Home> {
                 }
                 _nextQuestion();
               },
-              child:
-               leading: const Icon(Icons.note_alt),
-               Text(endOfQuiz ? 'Restart Quiz' : 'Next Question'),
+              child: Text(endOfQuiz ? 'Restart Quiz' : 'Next Question'),
             ),
             Container(
               padding: EdgeInsets.all(20.0),
