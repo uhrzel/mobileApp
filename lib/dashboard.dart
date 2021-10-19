@@ -142,16 +142,18 @@ class DashboardHome extends StatelessWidget {
         backgroundColor: Colors.blue[900],
         items: [
           BottomNavigationBarItem(
-              icon: InkWell(
-                  child: Icon(
-                    Icons.settings_applications_outlined,
-                    color: Colors.black,
-                  ),
-                  onTap: () {
-                    Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => Set()));
-                  }),
-              backgroundColor: Colors.red,
-              label: 'Settings'),
+            icon: InkWell(
+                child: Icon(
+                  Icons.settings_applications_outlined,
+                  color: Colors.black,
+                ),
+                onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => Set()));
+                }),
+            backgroundColor: Colors.red,
+            labelText: "Settings",
+            labelStyle: TextStyle(color: Colors.amber[600], fontStyle: FontStyle.italic),
+          ),
           BottomNavigationBarItem(
               icon: InkWell(
                   child: Icon(
