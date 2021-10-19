@@ -24,7 +24,7 @@ class DashboardHome extends StatelessWidget {
           'Dashboard',
           style: TextStyle(fontSize: 20.0, fontFamily: 'Mostery', color: Colors.black),
         ),
-        backgroundColor: Colors.pink,
+        //backgroundColor: Colors.pink,
       ),
       drawer: Drawer(
           child: Card(
