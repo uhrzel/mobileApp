@@ -77,7 +77,10 @@ class DashboardHome extends StatelessWidget {
             height: 1.0,
           ),
           ListTile(
-              leading: const Icon(Icons.other_houses_rounded),
+              leading: const Icon(
+                Icons.other_houses_rounded,
+                color: Colors.red,
+              ),
               title: Text(
                 'HOME',
                 style: TextStyle(fontSize: 20, fontFamily: 'fantasy'),
@@ -91,7 +94,10 @@ class DashboardHome extends StatelessWidget {
             height: 0.5,
           ),
           ListTile(
-              leading: const Icon(Icons.article),
+              leading: const Icon(
+                Icons.article,
+                color: Colors.red,
+              ),
               title: Text(
                 'ABOUT US',
                 style: TextStyle(fontSize: 20, fontFamily: 'fantasy'),
@@ -105,7 +111,10 @@ class DashboardHome extends StatelessWidget {
             height: 0.5,
           ),
           ListTile(
-              leading: const Icon(Icons.disabled_by_default_rounded),
+              leading: const Icon(
+                Icons.disabled_by_default_rounded,
+                color: Colors.red,
+              ),
               title: Text(
                 'QUIT',
                 style: TextStyle(fontSize: 20, fontFamily: 'fantasy'),
