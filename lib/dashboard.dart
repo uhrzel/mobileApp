@@ -66,7 +66,7 @@ class DashboardHome extends StatelessWidget {
               ),
               title: Text(
                 'EDIT QUIZ',
-                style: TextStyle(fontFamily: 'fantasy'),
+                style: TextStyle(fontSize: 20, fontFamily: 'fantasy'),
               ),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => EditQuiz()));
@@ -80,8 +80,7 @@ class DashboardHome extends StatelessWidget {
               leading: const Icon(Icons.other_houses_rounded),
               title: Text(
                 'HOME',
-                style: TextStyle(fontFamily: 'fantasy'),
-              ),
+                style: TextStyle(fontSize: 20, fontFamily: 'fantasy'),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => Dashboard()));
               },
@@ -94,7 +93,7 @@ class DashboardHome extends StatelessWidget {
               leading: const Icon(Icons.article),
               title: Text(
                 'ABOUT US',
-                style: TextStyle(fontFamily: 'fantasy'),
+                style: TextStyle(fontSize: 20, fontFamily: 'fantasy'),
               ),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => About()));
@@ -108,7 +107,7 @@ class DashboardHome extends StatelessWidget {
               leading: const Icon(Icons.disabled_by_default_rounded),
               title: Text(
                 'QUIT',
-                style: TextStyle(fontFamily: 'fantasy'),
+                style: TextStyle(fontSize: 20, fontFamily: 'fantasy'),
               ),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => MyApp()));
