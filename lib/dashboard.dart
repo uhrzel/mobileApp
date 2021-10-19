@@ -20,6 +20,7 @@ class DashboardHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: const Icon(Icons.space_dashboard_rounded),
         title: Text(
           'Dashboard',
           style: TextStyle(fontSize: 20.0, fontFamily: 'Mostery', color: Colors.black),
@@ -75,6 +76,7 @@ class DashboardHome extends StatelessWidget {
             height: 0.5,
           ),
           ListTile(
+              leading: const Icon(Icons.article),
               title: Text('ABOUT US'),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => About()));
@@ -111,8 +113,8 @@ class DashboardHome extends StatelessWidget {
           BottomNavigationBarItem(
               icon: InkWell(
                   child: Icon(
-                    Icons.settings,
-                    color: Colors.black,
+                    Icons.settings_applications_outlined,
+                    //color: Colors.black,
                   ),
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => Set()));
