@@ -5,6 +5,7 @@ import 'about_us.dart';
 import 'settings.dart';
 import 'rate.dart';
 import 'profile.dart';
+import 'EditQuiz.dart';
 
 class Dashboard extends StatelessWidget {
   @override
