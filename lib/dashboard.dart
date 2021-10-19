@@ -38,7 +38,7 @@ class DashboardHome extends StatelessWidget {
             tileColor: Colors.pink,
           ),
           Divider(
-            color: Colors.black,
+            color: Colors.red,
             height: 30.0,
           ),
           ListTile(
