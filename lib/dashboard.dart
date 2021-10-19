@@ -50,6 +50,16 @@ class DashboardHome extends StatelessWidget {
             height: 1.0,
           ),
           ListTile(
+              title: Text('EDIT QUIZ'),
+              onTap: () {
+                Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => EditQuiz()));
+              },
+              tileColor: Colors.blue[900]),
+          Divider(
+            color: Colors.black,
+            height: 1.0,
+          ),
+          ListTile(
               title: Text('HOME'),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => Dashboard()));
