@@ -44,7 +44,7 @@ class DashboardHome extends StatelessWidget {
           ListTile(
               leading: const Icon(
                 Icons.flaky,
-                color: Colors.red,
+                color: Colors.pink,
               ),
               //color: Colors.blue[900],
               title: Text(
@@ -62,7 +62,7 @@ class DashboardHome extends StatelessWidget {
           ListTile(
               leading: const Icon(
                 Icons.note_alt,
-                color: Colors.green,
+                color: Colors.pink,
               ),
               title: Text(
                 'EDIT QUIZ',
@@ -79,7 +79,7 @@ class DashboardHome extends StatelessWidget {
           ListTile(
               leading: const Icon(
                 Icons.other_houses_rounded,
-                color: Colors.red,
+                color: Colors.pink,
               ),
               title: Text(
                 'HOME',
@@ -96,7 +96,7 @@ class DashboardHome extends StatelessWidget {
           ListTile(
               leading: const Icon(
                 Icons.article,
-                color: Colors.red,
+                color: Colors.pink,
               ),
               title: Text(
                 'ABOUT US',
@@ -113,7 +113,7 @@ class DashboardHome extends StatelessWidget {
           ListTile(
               leading: const Icon(
                 Icons.disabled_by_default_rounded,
-                color: Colors.red,
+                color: Colors.pink,
               ),
               title: Text(
                 'QUIT',
