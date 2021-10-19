@@ -100,6 +100,8 @@ class _HomeState extends State<Home> {
                 borderRadius: BorderRadius.circular(10.0),
               ),
               child: Center(
+                
+static const IconData filter_1 = IconData(0xe270, fontFamily: 'MaterialIcons'); 
                 child: Text(
                   _questions[_questionIndex]['question'],
                   textAlign: TextAlign.center,
@@ -141,7 +143,8 @@ class _HomeState extends State<Home> {
                 }
                 _nextQuestion();
               },
-              child: Text(endOfQuiz ? 'Restart Quiz' : 'Next Question'),
+              child:
+               Text(endOfQuiz ? 'Restart Quiz' : 'Next Question'),
             ),
             Container(
               padding: EdgeInsets.all(20.0),
