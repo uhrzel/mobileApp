@@ -81,6 +81,7 @@ class DashboardHome extends StatelessWidget {
               title: Text(
                 'HOME',
                 style: TextStyle(fontSize: 20, fontFamily: 'fantasy'),
+              ),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => Dashboard()));
               },
