@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'quiz.dart';
+import 'login.dart';
 import 'main.dart';
 
 class SignUp extends StatelessWidget {
@@ -54,7 +54,7 @@ class SignUpHome extends StatelessWidget {
                 padding: EdgeInsets.fromLTRB(15, 10, 15, 0),
                 child: TextFormField(
                     cursorColor: Colors.lightGreen,
-                    keyboardType: TextInputType.phone,
+                    keyboardType: TextInputType.name,
                     decoration: InputDecoration(
                       labelText: 'Username',
                       hintText: 'Enter username',
@@ -65,11 +65,11 @@ class SignUpHome extends StatelessWidget {
               Container(
                   child: Row(children: <Widget>[
                 Container(
-                  width: 170,
+                  width: 186,
                   padding: EdgeInsets.fromLTRB(15, 10, 2, 0),
                   child: TextFormField(
                       cursorColor: Colors.lightGreen,
-                      keyboardType: TextInputType.phone,
+                      keyboardType: TextInputType.name,
                       decoration: InputDecoration(
                         labelText: 'Firstname',
                         hintText: 'Enter Firstname',
@@ -78,11 +78,11 @@ class SignUpHome extends StatelessWidget {
                       )),
                 ),
                 Container(
-                  width: 170,
+                  width: 186,
                   padding: EdgeInsets.fromLTRB(2, 10, 3, 0),
                   child: TextFormField(
                       cursorColor: Colors.lightGreen,
-                      keyboardType: TextInputType.phone,
+                      keyboardType: TextInputType.name,
                       decoration: InputDecoration(
                         labelText: 'Lastname',
                         hintText: 'Enter Lastname',
@@ -95,7 +95,7 @@ class SignUpHome extends StatelessWidget {
                 padding: EdgeInsets.fromLTRB(15, 10, 15, 0),
                 child: TextFormField(
                     cursorColor: Colors.lightGreen,
-                    keyboardType: TextInputType.phone,
+                    keyboardType: TextInputType.emailAddress,
                     decoration: InputDecoration(
                       labelText: 'Email',
                       hintText: 'Enter Email',
@@ -116,17 +116,41 @@ class SignUpHome extends StatelessWidget {
                     )),
               ),
               Container(
+                padding: EdgeInsets.fromLTRB(15, 10, 15, 0),
+                child: TextFormField(
+                    cursorColor: Colors.lightGreen,
+                    keyboardType: TextInputType.visiblePassword,
+                    decoration: InputDecoration(
+                      labelText: 'Password',
+                      hintText: 'Enter Password',
+                      focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.lightGreen)),
+                      border: OutlineInputBorder(borderSide: BorderSide()),
+                    )),
+              ),
+              Container(
+                padding: EdgeInsets.fromLTRB(15, 10, 15, 0),
+                child: TextFormField(
+                    cursorColor: Colors.lightGreen,
+                    keyboardType: TextInputType.visiblePassword,
+                    decoration: InputDecoration(
+                      labelText: 'Re-type Password',
+                      hintText: 'Confirm Your Password',
+                      focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.lightGreen)),
+                      border: OutlineInputBorder(borderSide: BorderSide()),
+                    )),
+              ),
+              Container(
                 padding: EdgeInsets.all(10),
-                margin: EdgeInsets.only(top: 20),
+                margin: EdgeInsets.only(top: 10, left: 220),
                 child: SizedBox(
-                  height: 60,
-                  width: 250,
+                  height: 30,
+                  width: 120,
                   child: RaisedButton(
                     onPressed: () {
-                      Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => Home()));
+                      Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => Login()));
                     },
                     child: Text(
-                      "PLAY NOW",
+                      "Register!",
                       style: TextStyle(fontSize: 20),
                     ),
                     colorBrightness: Brightness.dark,
