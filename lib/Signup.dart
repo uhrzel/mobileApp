@@ -78,7 +78,7 @@ class SignUpHome extends StatelessWidget {
                       )),
                 ),
                 Container(
-                  width: 186,
+                  width: 150,
                   padding: EdgeInsets.fromLTRB(2, 10, 3, 0),
                   child: TextFormField(
                       cursorColor: Colors.lightGreen,
