@@ -119,7 +119,7 @@ class DashboardHome extends StatelessWidget {
             Card(
               child: ListTile(
                 title: Text('Montano Marjorie'),
-                subtitle: Text('Chupapimunyayo@gmail.com'),
+                subtitle: Text('margomontano@gmail.com'),
                 onTap: () {},
               ),
             ),
