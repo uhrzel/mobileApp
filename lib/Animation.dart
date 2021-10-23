@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'Signup.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -66,7 +67,7 @@ class MainAppState extends State<MainApp> with SingleTickerProviderStateMixin {
         builder: (context, child) {
           return Scaffold(
             body: Container(
-              padding: EdgeInsets.all(60),
+                padding: EdgeInsets.all(60),
                 margin: EdgeInsets.only(top: 10),
                 constraints: BoxConstraints.expand(),
                 color: background.evaluate(AlwaysStoppedAnimation(animationController.value)),
@@ -76,24 +77,7 @@ class MainAppState extends State<MainApp> with SingleTickerProviderStateMixin {
                     style: TextStyle(color: Colors.white, fontSize: 42, fontWeight: FontWeight.bold),
                     textAlign: TextAlign.center,
                   ),
-                )
-                child: SizedBox(
-                  height: 60,
-                  width: 250,
-                  child: RaisedButton(
-                    onPressed: () {
-                      Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => SignUp()));
-                    },
-                    child: Text(
-                      "TAP TO PLAY",
-                      style: TextStyle(fontSize: 20),
-                    ),
-                    colorBrightness: Brightness.dark,
-                    color: Colors.lightBlue,
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
-                  ),
-                )
-              ),
+                )),
           );
         });
   }
