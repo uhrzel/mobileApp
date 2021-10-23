@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'main.dart';
+import 'Animation.dart';
 import 'listofquiz.dart';
 import 'about_us.dart';
 import 'rate.dart';
