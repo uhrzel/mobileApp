@@ -88,7 +88,7 @@ class DashboardHome extends StatelessWidget {
                         leading: Icon(Icons.supervisor_account),
                         title: Text('Log Out'),
                         onTap: () {
-                          Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => MainApp()));
+                          Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => MyApp()));
                         },
                         tileColor: Colors.blue[100]),
                   ),
