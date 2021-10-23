@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-//import 'Signup.dart';
+import 'Signup.dart';
 
 void main() => runApp(MyApp());
 
@@ -55,9 +55,9 @@ class MyHomePage extends StatelessWidget {
                 child: SizedBox(
                   height: 60,
                   width: 250,
-                  /*child: RaisedButton(
-                   onPressed: () {
-                     Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => SignUp()));
+                  child: RaisedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => SignUp()));
                     },
                     child: Text(
                       "TAP TO PLAY",
@@ -66,7 +66,7 @@ class MyHomePage extends StatelessWidget {
                     colorBrightness: Brightness.dark,
                     color: Colors.lightBlue,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
-                  ),*/
+                  ),
                 ))
           ],
         ),
