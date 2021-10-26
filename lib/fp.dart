@@ -14,7 +14,7 @@ class myforgotPassScreen extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Log in Now'),
+          title: Text('Log in Now'),
         ),
         body: const Center(
           child: Text(''),
