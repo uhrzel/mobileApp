@@ -107,7 +107,7 @@ class LoginHome extends StatelessWidget {
             padding: EdgeInsets.only(top: 2, left: 160, right: 0),
             child: TextButton(
               onPressed: () {
-                Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => myforgotPassScreen()));
+                Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => ForgotPassword()));
               },
               child: Text(
                 "Forgot Password?",
