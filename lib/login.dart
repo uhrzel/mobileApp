@@ -56,12 +56,11 @@ class LoginHome extends StatelessWidget {
           title: Text(
             title,
           ),
-          //backgroundColor: Colors.lightBlueAccent,
-          centerTitle: true,
+          //centerTitle: true,
         ),
         body: Center(
-            child: Card(
-                child: Column(children: <Widget>[
+            //child: Card(
+            child: Column(children: <Widget>[
           SizedBox(height: 30.0),
           Text(
             'Login to Dashboard',
@@ -159,7 +158,9 @@ class LoginHome extends StatelessWidget {
               ),
             ),
           ),
-        ]))));
+        ])
+            //)
+            ));
   }
 
   InputDecoration myInputDecoration({@required String label, @required IconData icon}) {
@@ -181,7 +182,7 @@ class LoginHome extends StatelessWidget {
 
       focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(30), borderSide: BorderSide(color: Colors.blue, width: 3)), //focus border
 
-      //fillColor: Colors.white,
+      fillColor: Colors.white,
       filled: true, //set true if you want to show input background
     );
   }
