@@ -24,85 +24,58 @@ class myforgotPassScreen extends StatelessWidget {
   }
 }
 
-class SignUpHome extends StatelessWidget {
-  final String title;
-  const SignUpHome({@required this.title});
+class myforgotPassScreen extends StatelessWidget {
+  static String id = 'forgot-password';
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading: IconButton(
-            icon: Icon(Icons.arrow_back),
-            onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => LoginHome()));
-            }),
-        title: Text(
-          title,
-        ),
-        centerTitle: true,
-        backgroundColor: Colors.pink,
-      ),
-      body: Center(
-        child: Card(
-          color: Colors.blue[900],
+      backgroundColor: Colors.lightBlueAccent,
+      body: Form(
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 30.0),
           child: Column(
-            children: <Widget>[
-              SizedBox(height: 30.0),
-              Text('Search Your Account', style: TextStyle(fontFamily: 'Times New Roman', fontWeight: FontWeight.bold, fontSize: 20, color: Colors.black54)),
-              SizedBox(height: 20.0),
-              Container(
-                padding: EdgeInsets.fromLTRB(15, 10, 15, 0),
-                child: TextFormField(
-                    cursorColor: Colors.lightGreen,
-                    keyboardType: TextInputType.name,
-                    decoration: InputDecoration(
-                      labelText: 'Username',
-                      hintText: 'Enter username',
-                      focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.lightGreen)),
-                      border: OutlineInputBorder(borderSide: BorderSide()),
-                    )),
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                'Email Your Email',
+                style: TextStyle(fontSize: 30, color: Colors.white),
               ),
-              Container(
-                padding: EdgeInsets.all(10),
-                margin: EdgeInsets.only(top: 10, left: 220),
-                child: SizedBox(
-                  height: 30,
-                  width: 120,
-                  child: RaisedButton(
-                    onPressed: () {
-                      //Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => ()));
-                    },
-                    child: Text(
-                      "Register!",
-                      style: TextStyle(fontSize: 20),
-                    ),
-                    colorBrightness: Brightness.dark,
-                    color: Colors.blue[300],
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)
-                        //button corner radius
-                        ),
+              TextFormField(
+                style: TextStyle(color: Colors.white),
+                decoration: InputDecoration(
+                  labelText: 'Email',
+                  icon: Icon(
+                    Icons.mail,
+                    color: Colors.white,
+                  ),
+                  errorStyle: TextStyle(color: Colors.white),
+                  labelStyle: TextStyle(color: Colors.white),
+                  hintStyle: TextStyle(color: Colors.white),
+                  focusedBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: Colors.white),
+                  ),
+                  enabledBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: Colors.white),
+                  ),
+                  errorBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: Colors.white),
                   ),
                 ),
               ),
+              SizedBox(height: 20),
+              RaisedButton(
+                child: Text('Send Email'),
+                onPressed: () {},
+              ),
+              FlatButton(
+                child: Text('Sign In'),
+                onPressed: () {},
+              )
             ],
           ),
         ),
       ),
-    );
-  }
-
-  InputDecoration myInputDecoration({@required String label}) {
-    return InputDecoration(
-      hintText: label,
-      hintStyle: TextStyle(color: Colors.black54, fontSize: 20),
-
-      enabledBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.black54, width: 2)), //default border of input
-
-      focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.black54, width: 2)), //focus border
-
-      fillColor: Colors.white,
-      filled: true,
     );
   }
 }
