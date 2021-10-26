@@ -14,11 +14,6 @@ class myforgotPassScreen extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          leading: IconButton(
-              icon: Icon(Icons.arrow_back),
-              onPressed: () {
-                Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => LoginHome()));
-              }),
           title: const Text(''),
         ),
         body: const Center(
@@ -76,7 +71,7 @@ class SignUpHome extends StatelessWidget {
                   width: 120,
                   child: RaisedButton(
                     onPressed: () {
-                      Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => Login()));
+                      //Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => ()));
                     },
                     child: Text(
                       "Register!",
