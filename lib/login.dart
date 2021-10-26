@@ -105,9 +105,7 @@ class LoginHome extends StatelessWidget {
           ),
           FlatButton(
             onPressed: () {
-              Navigator.pushNamed(
-                context,
-                ForgotPassword.id,
+              Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => ForgotPassword()));
               );
             },
             child: Text(
