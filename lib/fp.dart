@@ -14,10 +14,10 @@ class myforgotPassScreen extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Log in Now'),
+          title: const Text(''),
         ),
         body: Center(
-          child: Text(''),
+          child: const Text(''),
         ),
       ),
     );
@@ -36,7 +36,7 @@ class ForgotPassword extends StatelessWidget {
             onPressed: () {
               Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => LoginHome()));
             }),
-        title: Text(title),
+        title: Text("Log in Now"),
       ),
       backgroundColor: Colors.lightBlueAccent,
       body: Form(
