@@ -55,9 +55,9 @@ class LoginHome extends StatelessWidget {
           title: Text(
             title,
           ),
-          backgroundColor: Colors.lightBlueAccent,
+          //backgroundColor: Colors.lightBlueAccent,
           centerTitle: true,
-          //backgroundColor: Colors.blue,
+          backgroundColor: Colors.blue,
         ),
         body: Center(
             child: Card(
@@ -159,7 +159,9 @@ class LoginHome extends StatelessWidget {
               ),
             ),
           ),
-        ]))));
+        ])))
+        );
+        backgroundColor: Colors.lightBlueAccent,
   }
 
   InputDecoration myInputDecoration({@required String label, @required IconData icon}) {
