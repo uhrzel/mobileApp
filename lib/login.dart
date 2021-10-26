@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'Signup.dart';
 import 'dashboard.dart';
+import 'fp.dart';
 
 class Login extends StatelessWidget {
   // This widget is the root of your application.
@@ -105,7 +106,9 @@ class LoginHome extends StatelessWidget {
           Container(
             padding: EdgeInsets.only(top: 2, left: 160, right: 0),
             child: TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => myforgotPassScreen()));
+              },
               child: Text(
                 "Forgot Password?",
                 style: TextStyle(fontSize: 20, color: Colors.black54),
