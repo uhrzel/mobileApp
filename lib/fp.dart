@@ -1,28 +1,7 @@
 import 'package:flutter/material.dart';
 import 'login.dart';
 
-void main() => runApp(myforgotPassScreen());
-
-class myforgotPassScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Welcome to Flutter',
-      theme: ThemeData(
-        primarySwatch: Colors.pink,
-      ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text(''),
-        ),
-        body: Center(
-          child: const Text(''),
-        ),
-      ),
-    );
-  }
-}
+void main() => runApp(ForgotPassword);
 
 class ForgotPassword extends StatelessWidget {
   static String id = 'forgot-password';
