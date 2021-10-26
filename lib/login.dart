@@ -55,6 +55,7 @@ class LoginHome extends StatelessWidget {
           title: Text(
             title,
           ),
+          backgroundColor: Colors.lightBlueAccent,
           centerTitle: true,
           backgroundColor: Colors.blue,
         ),
