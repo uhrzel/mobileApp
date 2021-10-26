@@ -57,7 +57,7 @@ class LoginHome extends StatelessWidget {
           ),
           backgroundColor: Colors.lightBlueAccent,
           centerTitle: true,
-          backgroundColor: Colors.blue,
+          //backgroundColor: Colors.blue,
         ),
         body: Center(
             child: Card(
