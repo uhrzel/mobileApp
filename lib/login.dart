@@ -181,7 +181,7 @@ class LoginHome extends StatelessWidget {
 
       focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(30), borderSide: BorderSide(color: Colors.blue, width: 3)), //focus border
 
-      fillColor: Colors.white,
+      //fillColor: Colors.white,
       filled: true, //set true if you want to show input background
     );
   }
