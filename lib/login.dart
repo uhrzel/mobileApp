@@ -103,16 +103,16 @@ class LoginHome extends StatelessWidget {
               ),
             ),
           ),
-          Container(
-            padding: EdgeInsets.only(top: 2, left: 160, right: 0),
-            child: TextButton(
-              onPressed: () {
-                Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => ForgotPassword()));
-              },
-              child: Text(
-                "Forgot Password?",
-                style: TextStyle(fontSize: 20, color: Colors.black54),
-              ),
+          FlatButton(
+            onPressed: () {
+              Navigator.pushNamed(
+                context,
+                ForgotPassword.id,
+              );
+            },
+            child: Text(
+              'Forgot Password?',
+              style: TextStyle(color: Colors.grey, fontSize: 12),
             ),
           ),
           Container(
