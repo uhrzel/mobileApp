@@ -91,4 +91,18 @@ class SignUpHome extends StatelessWidget {
       ),
     );
   }
+
+  InputDecoration myInputDecoration({@required String label}) {
+    return InputDecoration(
+      hintText: label,
+      hintStyle: TextStyle(color: Colors.black54, fontSize: 20),
+
+      enabledBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.black54, width: 2)), //default border of input
+
+      focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.black54, width: 2)), //focus border
+
+      fillColor: Colors.white,
+      filled: true,
+    );
+  }
 }
