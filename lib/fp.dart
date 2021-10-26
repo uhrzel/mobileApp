@@ -14,7 +14,7 @@ class myforgotPassScreen extends StatelessWidget {
           eading: IconButton(
               icon: Icon(Icons.arrow_back),
               onPressed: () {
-                Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => LoginHome()));
+                Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => Login()));
               }),
           title: const Text(''),
         ),
