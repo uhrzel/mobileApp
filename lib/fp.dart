@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'login.dart';
 
-void main() => runApp(ForgotPassword);
+void main() => runApp(ForgotPassword());
 
 class ForgotPassword extends StatelessWidget {
   static String id = 'forgot-password';
