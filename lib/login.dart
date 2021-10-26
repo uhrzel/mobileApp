@@ -58,108 +58,108 @@ class LoginHome extends StatelessWidget {
           //backgroundColor: Colors.lightBlueAccent,
           centerTitle: true,
         ),
-        backgroundColor: Colors.lightBlueAccent,
         body: Center(
+            backgroundColor: Colors.lightBlueAccent,
             child: Card(
                 child: Column(children: <Widget>[
-          SizedBox(height: 30.0),
-          Text(
-            'Login to Dashboard',
-          ),
-          SizedBox(height: 20.0),
-          CircleAvatar(radius: 60.0, backgroundImage: AssetImage('images/unnamed.png')),
-          SizedBox(height: 15.0),
-          Text(
-            'Please Login to Continue',
-          ),
-          SizedBox(height: 20.0),
-          Container(
-            padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
-            margin: EdgeInsets.only(top: 10),
-            child: TextField(
-              controller: _username_controller,
-              onChanged: (value) {
-                username = value;
-              },
-              style: TextStyle(color: Colors.blueGrey[600], fontSize: 20),
-              decoration: myInputDecoration(
-                label: "Username",
-                icon: Icons.account_circle_outlined,
+              SizedBox(height: 30.0),
+              Text(
+                'Login to Dashboard',
               ),
-            ),
-          ),
-          Container(
-            padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
-            margin: EdgeInsets.only(top: 10),
-            child: TextField(
-              controller: _password_controller,
-              onChanged: (value) {
-                password = value;
-              },
-              style: TextStyle(color: Colors.blueGrey[600], fontSize: 20),
-              obscureText: true,
-              decoration: myInputDecoration(
-                label: "Password",
-                icon: Icons.lock,
+              SizedBox(height: 20.0),
+              CircleAvatar(radius: 60.0, backgroundImage: AssetImage('images/unnamed.png')),
+              SizedBox(height: 15.0),
+              Text(
+                'Please Login to Continue',
               ),
-            ),
-          ),
-          FlatButton(
-            onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => ForgotPassword()));
-            },
-            child: Text(
-              'Forgot Password?',
-              style: TextStyle(color: Colors.grey, fontSize: 12),
-            ),
-          ),
-          Container(
-            child: SizedBox(
-              height: 60,
-              width: 340,
-              child: RaisedButton(
+              SizedBox(height: 20.0),
+              Container(
+                padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+                margin: EdgeInsets.only(top: 10),
+                child: TextField(
+                  controller: _username_controller,
+                  onChanged: (value) {
+                    username = value;
+                  },
+                  style: TextStyle(color: Colors.blueGrey[600], fontSize: 20),
+                  decoration: myInputDecoration(
+                    label: "Username",
+                    icon: Icons.account_circle_outlined,
+                  ),
+                ),
+              ),
+              Container(
+                padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+                margin: EdgeInsets.only(top: 10),
+                child: TextField(
+                  controller: _password_controller,
+                  onChanged: (value) {
+                    password = value;
+                  },
+                  style: TextStyle(color: Colors.blueGrey[600], fontSize: 20),
+                  obscureText: true,
+                  decoration: myInputDecoration(
+                    label: "Password",
+                    icon: Icons.lock,
+                  ),
+                ),
+              ),
+              FlatButton(
                 onPressed: () {
-                  startLogin(context);
+                  Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => ForgotPassword()));
                 },
                 child: Text(
-                  "LOGIN NOW",
-                  style: TextStyle(fontSize: 20),
+                  'Forgot Password?',
+                  style: TextStyle(color: Colors.grey, fontSize: 12),
                 ),
-                // if showprogress == true then show progress indicator
-                // else show "LOGIN NOW" text
-                colorBrightness: Brightness.dark,
-                color: Colors.blue[300],
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)
-                    //button corner radius
-                    ),
               ),
-            ),
-          ),
-          Container(
-            padding: EdgeInsets.all(5),
-            margin: EdgeInsets.only(top: 5),
-            child: SizedBox(
-              height: 50,
-              width: 340,
-              child: RaisedButton(
-                onPressed: () {
-                  Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => SignUp()));
-                },
-                child: Text(
-                  "Sign Up",
-                  style: TextStyle(fontSize: 20),
+              Container(
+                child: SizedBox(
+                  height: 60,
+                  width: 340,
+                  child: RaisedButton(
+                    onPressed: () {
+                      startLogin(context);
+                    },
+                    child: Text(
+                      "LOGIN NOW",
+                      style: TextStyle(fontSize: 20),
+                    ),
+                    // if showprogress == true then show progress indicator
+                    // else show "LOGIN NOW" text
+                    colorBrightness: Brightness.dark,
+                    color: Colors.blue[300],
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)
+                        //button corner radius
+                        ),
+                  ),
                 ),
-                // if showprogress == true then show progress indicator
-                // else show "LOGIN NOW" text
-                colorBrightness: Brightness.dark,
-                color: Colors.blue[300],
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)
-                    //button corner radius
-                    ),
               ),
-            ),
-          ),
-        ]))));
+              Container(
+                padding: EdgeInsets.all(5),
+                margin: EdgeInsets.only(top: 5),
+                child: SizedBox(
+                  height: 50,
+                  width: 340,
+                  child: RaisedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => SignUp()));
+                    },
+                    child: Text(
+                      "Sign Up",
+                      style: TextStyle(fontSize: 20),
+                    ),
+                    // if showprogress == true then show progress indicator
+                    // else show "LOGIN NOW" text
+                    colorBrightness: Brightness.dark,
+                    color: Colors.blue[300],
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)
+                        //button corner radius
+                        ),
+                  ),
+                ),
+              ),
+            ]))));
   }
 
   InputDecoration myInputDecoration({@required String label, @required IconData icon}) {
