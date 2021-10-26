@@ -25,7 +25,7 @@ class ForgotPassword extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                'Email Your Email',
+                'Enter your Email',
                 style: TextStyle(fontSize: 30, color: Colors.white),
               ),
               TextFormField(
