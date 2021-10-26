@@ -11,7 +11,7 @@ class myforgotPassScreen extends StatelessWidget {
       title: 'Welcome to Flutter',
       home: Scaffold(
         appBar: AppBar(
-          title: const Text(null),
+          title: const Text(''),
         ),
         body: const Center(
           child: Text('Hello World'),
