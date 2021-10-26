@@ -11,6 +11,11 @@ class myforgotPassScreen extends StatelessWidget {
       title: 'Welcome to Flutter',
       home: Scaffold(
         appBar: AppBar(
+          eading: IconButton(
+              icon: Icon(Icons.arrow_back),
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => LoginHome()));
+              }),
           title: const Text(''),
         ),
         body: const Center(
