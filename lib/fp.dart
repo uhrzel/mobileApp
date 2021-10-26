@@ -30,6 +30,11 @@ class ForgotPassword extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => LoginHome()));
+          }),
       backgroundColor: Colors.lightBlueAccent,
       body: Form(
         child: Padding(
