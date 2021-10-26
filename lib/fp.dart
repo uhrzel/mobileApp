@@ -24,7 +24,7 @@ class myforgotPassScreen extends StatelessWidget {
   }
 }
 
-class myforgotPassScreen extends StatelessWidget {
+class ForgotPassword extends StatelessWidget {
   static String id = 'forgot-password';
 
   @override
