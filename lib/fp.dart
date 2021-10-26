@@ -14,7 +14,7 @@ class myforgotPassScreen extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: const Text(''),
+          title: const Text('Log in Now'),
         ),
         body: const Center(
           child: Text(''),
@@ -30,11 +30,14 @@ class ForgotPassword extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      leading: IconButton(
-          icon: Icon(Icons.arrow_back),
-          onPressed: () {
-            Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => LoginHome()));
-          }),
+      appBar: AppBar(
+        leading: IconButton(
+            icon: Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => LoginHome()));
+            }),
+        title: Text(title),
+      ),
       backgroundColor: Colors.lightBlueAccent,
       body: Form(
         child: Padding(
