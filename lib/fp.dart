@@ -35,7 +35,7 @@ class SignUpHome extends StatelessWidget {
         leading: IconButton(
             icon: Icon(Icons.arrow_back),
             onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => MyApp()));
+              Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => LoginHome()));
             }),
         title: Text(
           title,
